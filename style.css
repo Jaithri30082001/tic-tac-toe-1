@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+* {
+  background-color: rgba(41, 41, 41, 0.986);
+  /* background-color: greenyellow; */
+  /* position: relative; */
+}
+body {
+  height: 100%;
+}
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Lora", serif;
+
+  color: gold;
+}
+
+.grid-container {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 120px);
+  grid-template-rows: repeat(3, 120px);
+  color: silver;
+  font-size: 100px;
+  justify-content: center;
+  /* transform: translateX(580px); */
+}
+
+.grid-cell {
+  border: 3px solid rgb(3, 166, 171);
+  height: 100%;
+  width: 100%;
+  /* transform: translateX(580px); */
+}
+.grid-cell:hover {
+  background-color: rgba(47, 45, 45, 0.986);
+}
+
+.score-container {
+  display: grid;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  border-style: solid;
+  border-color: gold;
+  height: 200px;
+}
+
+#score1,
+#player1 {
+  border-width: 0px 3px 0px 0px;
+  border-style: solid;
+  border-color: gold;
+}
+
+#score1,
+#score2 {
+  font-size: 50px;
+}
+
+.buttons-container {
+  align-items: center;
+  padding: 10px;
+  bottom: 500px;
+  height: 150px;
+  width: 150px;
+}
+
+.reset {
+  background-color: rgb(199, 160, 108);
+  font-size: 30px;
+  font-family: "Lora", serif;
+  border-radius: 12px;
+  border-color: transparent;
+}
+
+.reset:hover {
+  background-color: burlywood;
+  transform: translateY(4px);
+  box-shadow: 0px 0px 10px burlywood;
+}
+.end_game {
+  background-color: rgb(199, 160, 108);
+  font-size: 30px;
+  font-family: "Lora", serif;
+  border-radius: 12px;
+  border-color: transparent;
+}
+
+.end_game:hover {
+  background-color: burlywood;
+  transform: translateY(4px);
+  box-shadow: 0px 0px 10px burlywood;
+}
+.step-1 {
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  margin: auto auto;
+  margin-top: 150px;
+  border: 3px solid white;
+  padding: 30px;
+}
+
+.player1-s1 {
+  background-color: beige;
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 9px;
+  width: 10ch;
+  font-size: 30px;
+}
+
+.player2-s1 {
+  background-color: beige;
+  border-radius: 9px;
+  border: none;
+  width: 10ch;
+  border-bottom: 1px solid black;
+  font-size: 30px;
+}
+
+.play-s1 {
+  background-color: rgb(199, 160, 108);
+  font-size: 30px;
+  font-family: "Lora", serif;
+  border-radius: 12px;
+  border-color: transparent;
+}
+
+.play-s1:hover {
+  background-color: burlywood;
+  transform: translateY(4px);
+  box-shadow: 0px 0px 10px burlywood;
+}
+
+input:focus {
+  outline: none;
+}
+
+.layout {
+  position: relative;
+  height: 936px;
+}
+.hidden {
+  display: none;
+}
+
+#x {
+  display: none;
+  height: 80px;
+}
+
+#o {
+  display: none;
+  height: 80px;
+}
